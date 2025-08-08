@@ -1,0 +1,65 @@
+/* Color Palette */
+:root {
+  --dark-green: #031716;
+  --deep-green: #ff1040;
+  --teal-dark: #0A7075;
+  --teal: #0C969C;
+  --light-blue: #6BA3BE;
+  --blue-grey: #274D60;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--dark-green);
+  color: white;
+}
+
+header, footer {
+  background-color: var(--deep-green);
+  padding: 1rem;
+}
+
+nav {
+  background-color: var(--teal-dark);
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: var(--teal);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--light-blue);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--blue-grey);
+}
+
+.notification {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+}
